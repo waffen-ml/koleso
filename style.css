@@ -1,0 +1,15 @@
+body {
+
+}
+
+.koleso-logo {
+    font-size:35px;
+    display:flex;
+    align-items: center;
+    
+}
+
+.koleso-logo img {
+    height:40px;
+
+}
