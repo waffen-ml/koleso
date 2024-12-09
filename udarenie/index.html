@@ -7,6 +7,10 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <style>
+        body {
+            margin:0;
+            padding:0;
+        }
         .app {
             width:100vw;
             font-family:'Trebuchet MS';
@@ -42,11 +46,14 @@
             font-size:30px;
         }
         .main {
+            display:flex;
+            flex-direction: column;
+            gap:15px;
+            align-items: center;
         }
+
         .error, .success {
             font-size:25px;
-            width:100%;
-            text-align: center;
         }
 
         .error {
@@ -70,10 +77,10 @@
                 opacity:0;
             }
             25% {
-                transform:translate(-2%);
+                transform:translate(-4%);
             }
             75% {
-                transform:translate(2%)
+                transform:translate(4%)
             }
             to {
                 opacity: 1;
