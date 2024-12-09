@@ -125,7 +125,7 @@
                 }
             },
             created() {
-                fetch('/words.txt')
+                fetch('./words.txt')
                 .then(r => r.text())
                 .then(text => {
                     const words = text
