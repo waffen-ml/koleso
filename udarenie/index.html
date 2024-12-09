@@ -37,15 +37,13 @@
             text-decoration: underline;
         }
         
-        .vowel:hover {
-            text-transform: uppercase;
-        }
 
-        @media (hover: none) {
+        @media (hover: hover) and (pointer: fine) {
             .vowel:hover {
-                text-transform: none;
+                text-transform: uppercase;
             }
         }
+
 
         .consonant {
             pointer-events: none;
