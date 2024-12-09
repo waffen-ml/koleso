@@ -129,7 +129,7 @@
                 .then(r => r.text())
                 .then(text => {
                     const words = text
-                        .split('\r\n')
+                        .split(/\r?\n/)
                         .map(w => w.trim())
                         .map(w => {
                             const idx = w.split('').findIndex(ch => ch.toUpperCase() == ch)
